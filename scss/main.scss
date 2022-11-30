@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid black;
+}
+.size{
+    label{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        // padding-top: 10px;
+        // padding-left: 10px;
+        padding: 12px 0;
+    }
+}
+
+body{
+    color: white;
+    background-image: url(../imgs/pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // height: 100vh;
+    // width: 100vw;
+}
+.div_container{
+    border: 1px solid black;
+opacity: 0.7;
+background-color: black;
+}
+
+// .labelfr label{
+//   opacity: 0.7;
+//     background-color: rgb(26, 22, 22);
+// }

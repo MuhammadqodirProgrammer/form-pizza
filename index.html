@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body>
+
+        <div class="container div_container">
+            <!-- novalidate -->
+            <form class="row g-3 needs-validation" id="form">
+
+                <div class="col-md-10 mx-auto position-relative labelfr">
+                    <label for="validationTooltip01" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="validationTooltip01" required placeholder="Username">
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto position-relative labelfr">
+                    <label for="validationTooltip02" class="form-label">Phone number</label>
+                    <input type="tel" class="form-control" id="validationTooltip02" required placeholder="Phone number">
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto position-relative labelfr">
+                    <label for="validationTooltip03" class="form-label">User address</label>
+                    <input type="text" class="form-control" id="validationTooltip03" required
+                        placeholder="User address">
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+
+
+                <div class="dough row col-md-10 mx-md-auto mt-4 ">
+                    <label for="validationTooltip04" class="form-label col-md-6">Dough thickness:
+                    </label>
+                    <div class="col-md-6 position-relative labelfr">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>none</option>
+                            <option value="Thin">Thin</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Thick">Thick</option>
+                        </select>
+                        <div class="invalid-tooltip">
+                            Please select a valid state.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="size row col-md-10 mx-md-auto my-md-3">
+
+                    <label for="">Size:</label>
+                    <label class="btn btn-secondary mx-4" for="option1">
+                        <input type="radio"  class="btn-check radio" name="options" id="option1" autocomplete="off" value="25sm">
+                         25sm
+                        </label>
+
+                
+                    <label class="btn btn-secondary mx-4" for="option2">
+                        <input type="radio"  class="btn-check radio" name="options" id="option2" autocomplete="off" value="30sm">
+                         30sm
+                        
+                    </label>
+
+                    <input type="radio"  class="btn-check radio" name="options" id="option3" autocomplete="off" value="35sm">
+                    <label class="btn btn-secondary mx-4" for="option3">35sm</label>
+                </div>
+
+                <div class="onpizza row  col-md-10 mx-md-auto my-md-3" id="onpizza">
+                    <label for="">On pizza:</label>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input inpizza" type="checkbox" value="Tomato"  id="tomato">
+                            <label class="form-check-label acsecory" for="tomato">
+                                Tomato
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input inpizza" type="checkbox" value="Tuekey meat"  id="tuekeymeat">
+                            <label class="form-check-label acsecory" for="tuekeymeat">
+                                Turkey meat
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input inpizza" type="checkbox" value="Olive"  id="olive">
+                            <label class="form-check-label acsecory" for="olive">
+                                Olive
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input inpizza" type="checkbox" value="Picled cucumber"  id="picled">
+                            <label class="form-check-label acsecory" for="picled">
+                                Picled cucumber
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input inpizza" type="checkbox" value="Mushroom"  id="mushroom">
+                            <label class="form-check-label acsecory" for="mushroom">
+                                Mushroom
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input inpizza" type="checkbox" value="Horse meat"  id="horsemeat">
+                            <label class="form-check-label acsecory" for="horsemeat">
+                                Horse meat
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="onpizza row  col-md-10 mx-md-auto my-md-3">
+                    <label for="">Add:</label>
+
+                    <div class="col-md-10">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input add" type="checkbox" value="Pepper" id="pepper">
+                            <label class="form-check-label" for="pepper">
+                                Pepper
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input add" type="checkbox" value="Sausages" id="sausages">
+                            <label class="form-check-label" for="sausages">
+                                Sausages
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="save row  col-md-10 mx-md-auto my-md-3 ">
+                    <div class=" col-md-10  ">
+                        <button class="btn btn-primary mx-auto   px-5" type="submit">Save</button>
+                    </div>
+
+                </div>
+            </form>
+
+<div class="order">
+
+    <h2><b>Order:</b>  <span id="order"></span></h2>
+    <h2><b>Name:</b>  <span id="name"></span></h2>
+    <h2><b> Phone:</b> <span id="phone"></span></h2>
+    <h2><b>Address:</b>  <span id="address"></span></h2>
+    <hr>
+    <h2><b>Daugh thicknes:</b>  <span id="dough"></span></h2>
+    <h2><b>Size:</b>  <span id="size"></span></h2>
+    <h2><b>On pizza:</b>  <span id="onpiza"></span></h2>
+    <h2><b>Add:</b>  <span id="add"></span></h2>
+    <hr>
+    <h2><b>Total:</b>  <span id="total"></span></h2>
+
+
+
+
+
+</div>
+
+        </div>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
+
+    </body>
+
+</html>
