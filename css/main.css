@@ -13,6 +13,16 @@
   height: 50px;
   border-radius: 50%;
   padding: 12px 0;
+  background-color: transparent;
+}
+
+.radio:hover {
+  background-color: #6c757d;
+  border: 1px solid #212529;
+}
+.radio:checked {
+  background-color: #6c757d;
+  border: 1px solid #212529;
 }
 
 body {
@@ -20,11 +30,75 @@ body {
   background-image: url(../imgs/pizza.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center left;
+  max-width: 1300px;
 }
 
 .div_container {
+  margin: 0 auto;
   border: 1px solid black;
   opacity: 0.7;
   background-color: black;
+}
+
+.order h2 b {
+  font-weight: 400;
+}
+.order h2 span {
+  font-weight: 400;
+  color: rgba(177, 172, 172, 0.767);
+}
+
+h1 {
+  margin: 0 auto;
+  max-width: 400px;
+  color: rgba(34, 31, 31, 0.767);
+}
+
+.loader-bg {
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+
+.loader::before, .loader::after {
+  content: "";
+  border: 1em solid #ff5733;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader::before {
+  animation-delay: 0.5s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
